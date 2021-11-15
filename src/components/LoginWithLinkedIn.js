@@ -7,7 +7,7 @@ import { useLinkedIn } from "react-linkedin-login-oauth2";
 export default function LinkedInPage() {
   const { linkedInLogin } = useLinkedIn({
     clientId: "77tp2tqpqq33sm",
-    redirectUri: `https://3e13-2400-adc5-12a-100-f485-fae1-d09a-b061.ngrok.io/`,
+    redirectUri: `http://localhost:3000/linkedin`,
     onSuccess: (code) => {
       console.log(code);
     },
